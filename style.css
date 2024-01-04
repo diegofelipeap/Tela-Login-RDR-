@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'Chinese Rocks';
+    src: url('./fonts/chinese\ rocks\ rg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chinese Rocks', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #0A0A10;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0;
+    max-width: 414px;
+    min-height: 100vh;
+    gap: 12px;
+    position: relative;
+}
+
+.blur {
+    width: 390px;
+    height: 280px;
+    position: absolute;
+    z-index: -1;
+    background: #deba38d6;
+    opacity: 0.25;
+    filter: blur(24px);
+    border-radius: 170px;
+}
+
+.logo-login {
+    cursor: pointer;
+}
+
+h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 33px;
+    cursor: pointer;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+    width: 100%;
+}
+
+label {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+    margin: 4px 0 4px 4px;
+}
+
+input {
+    display: flex;
+    height: 41px;
+    width: 100%;
+    padding: 31px 15px 9px 0px;
+    align-items: center;
+    margin-bottom: 8px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.60);
+    color: #FFF;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    padding-left: 4px;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+}
+
+.btn-login {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    height: 68px;
+    padding: 0px 113px;
+    justify-content: center;
+    align-items: center;
+    background: #D93856;
+    color: #FFF;
+    line-height: 2.5px;
+    text-align: center;
+    font-size: 17px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    opacity: 0.9;
+}
+
+.btn-login:active {
+    opacity: 0.7;
+}
+
+.btn-rockstar {
+    display: flex;
+    width: 100%;
+    height: 68px;
+    padding: 0px 113px;
+    justify-content: center;
+    align-items: center;
+    background: #ece515;
+    color: #0A0A10;
+    line-height: 2.5px;
+    text-align: center;
+    font-size: 17px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.btn-rockstar:hover {
+    opacity: 0.9;
+}
+
+.btn-rockstar:active {
+    opacity: 0.7;
+}
+
+footer {
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+}
+
+a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background: #D93856;
+    bottom: -3px;
+    left: 0;
+}
+
+a:hover::after {
+    content: "";
+    width: 45%;
+    height: 2px;
+    position: absolute;
+    background: #D93856;
+    bottom: -3px;
+    left: 114px;
+}
+
+span {
+    color: #FFF;
+}
+
+#blur-page {
+    width: 390px;
+    height: 280px;
+    position: absolute;
+    z-index: -1;
+    background: #c51e1ed4;
+    opacity: 0.25;
+    filter: blur(24px);
+    border-radius: 170px;
+}
+
+@media screen and (max-width: 420px) {
+    .logo-login {
+        width: 380px;
+    }
+}
